@@ -1,6 +1,6 @@
 import React from "react";
 import { FaDownload, FaPlay } from "react-icons/fa";
-import profileImg from "../assets/profile.png"; // Make sure image is in assets folder
+import profileImg from "../assets/profile.png";
 
 const Hero = () => {
   return (
@@ -20,9 +20,15 @@ const Hero = () => {
         </p>
 
         <div className="btn-group">
-          <button className="btn-primary">
+          {/* UPDATED: Download CV Link */}
+          <a
+            href="/cv.pdf"
+            download="Akash_Murugan_CV.pdf"
+            className="btn-primary"
+          >
             Download CV <FaDownload />
-          </button>
+          </a>
+
           <a href="#projects" className="btn-watch">
             <span className="play-icon">
               <FaPlay />
