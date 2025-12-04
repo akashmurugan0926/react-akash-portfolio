@@ -20,9 +20,9 @@ const Hero = () => {
         </p>
 
         <div className="btn-group">
-          {/* UPDATED: Download CV Link */}
+          {/* --- FIXED LINK BELOW --- */}
           <a
-            href="/cv.pdf"
+            href="cv.pdf"
             download="Akash_Murugan_CV.pdf"
             className="btn-primary"
           >
